@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	IRC
-Summary:	Net-IRC perl module
-Summary(pl):	Modu³ perla Net-IRC
+Summary:	Net::IRC perl module
+Summary(pl):	Modu³ perla Net::IRC
 Name:		perl-Net-IRC
 Version:	0.73
 Release:	4
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net-IRC - Perl interface to IRC.
+Net::IRC - Perl interface to IRC.
 
 %description -l pl
-Net-IRC - interfejs perla do IRC.
+Net::IRC - interfejs perla do IRC.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
