@@ -1,0 +1,12 @@
+diff -Naur Net-IRC-0.63/Connection.pm Net-IRC-0.63-p/Connection.pm
+--- Net-IRC-0.63/Connection.pm	Mon Jan 31 03:00:23 2000
++++ Net-IRC-0.63-p/Connection.pm	Thu Aug  3 17:14:34 2000
+@@ -1092,7 +1092,7 @@
+ 		 /x)                      # That ought to do it for now...
+ 	{
+ 	    $line = substr $line, 1 if $line =~ /^:/;
+-	    ($from, $line) = split ":", $line, 2;
++	    ($from, $line) = split " :", $line, 2;
+ 	    ($from, $type, @stuff) = split /\s+/, $from;
+ 	    $type = lc $type;
+ 	    
