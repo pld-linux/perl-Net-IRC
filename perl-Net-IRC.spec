@@ -3,7 +3,7 @@ Summary:	Net-IRC perl module
 Summary(pl):	Modu³ perla Net-IRC
 Name:		perl-Net-IRC
 Version:	0.70
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-IRC-%{version}.ta
 Patch0:		%{name}-ipv6.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
