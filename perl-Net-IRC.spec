@@ -4,12 +4,12 @@
 Summary:	Net::IRC perl module
 Summary(pl):	Modu³ perla Net::IRC
 Name:		perl-Net-IRC
-Version:	0.73
-Release:	5
+Version:	0.75
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	abbd45ad665540ebf4d690b4dc93625f
+# Source0-md5:	57587a48ddece7a995c6b138003ee798
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildArch:	noarch
