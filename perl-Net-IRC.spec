@@ -2,9 +2,9 @@
 Summary:	Net-IRC perl module
 Summary(pl):	Modu³ perla Net-IRC
 Name:		perl-Net-IRC
-Version:	0.5b
-Release:	3
-Copyright:	GPL
+Version:	0.63
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-IRC-%{version}.tar.gz
