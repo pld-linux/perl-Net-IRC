@@ -6,7 +6,7 @@ Summary(pl):	Modu³ perla Net::IRC
 Name:		perl-Net-IRC
 Version:	0.73
 Release:	5
-License:	GPL
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	abbd45ad665540ebf4d690b4dc93625f
@@ -32,7 +32,8 @@ Net::IRC - interfejs perla do IRC.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
