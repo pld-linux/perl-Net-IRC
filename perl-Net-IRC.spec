@@ -26,7 +26,7 @@ Net::IRC - interfejs perla do IRC.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
