@@ -8,6 +8,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-IRC-%{version}.tar.gz
+Patch0:		%{name}-ipv6.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -22,6 +23,7 @@ Net-IRC - interfejs perla do IRC.
 
 %prep
 %setup -q -n Net-IRC-%{version}
+%patch0 -p1
 
 %build
 perl Makefile.PL
