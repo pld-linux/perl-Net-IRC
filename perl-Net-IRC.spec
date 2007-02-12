@@ -2,7 +2,7 @@
 %define		pdir	Net
 %define		pnam	IRC
 Summary:	Net::IRC perl module
-Summary(pl):	Modu≥ Perla Net::IRC
+Summary(pl.UTF-8):   Modu≈Ç Perla Net::IRC
 Name:		perl-Net-IRC
 Version:	0.75
 Release:	1
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Net::IRC - Perl interface to IRC.
 
-%description -l pl
+%description -l pl.UTF-8
 Net::IRC - interfejs Perla do IRC.
 
 %prep
