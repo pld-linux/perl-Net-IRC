@@ -2,7 +2,7 @@
 %define		pdir	Net
 %define		pnam	IRC
 Summary:	Net::IRC perl module
-Summary(pl.UTF-8):   Moduł Perla Net::IRC
+Summary(pl.UTF-8):	Moduł Perla Net::IRC
 Name:		perl-Net-IRC
 Version:	0.75
 Release:	1
