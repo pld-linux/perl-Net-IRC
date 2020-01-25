@@ -1,6 +1,5 @@
 %define		pdir	Net
 %define		pnam	IRC
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::IRC perl module
 Summary(pl.UTF-8):	Moduł Perla Net::IRC
 Name:		perl-Net-IRC
