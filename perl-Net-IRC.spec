@@ -3,12 +3,13 @@
 Summary:	Net::IRC perl module
 Summary(pl.UTF-8):	Moduł Perla Net::IRC
 Name:		perl-Net-IRC
-Version:	0.75
-Release:	3
+Version:	0.79
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	57587a48ddece7a995c6b138003ee798
+# Source0-md5:	5849c6e482ade4367d783e04a4530ee6
+Patch0:		%{name}-no-prompt.patch
 URL:		http://search.cpan.org/dist/Net-IRC/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,6 +24,7 @@ Net::IRC - interfejs Perla do IRC.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch -P0 -p1
 
 %build
 %{__perl} Makefile.PL \
@@ -40,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README TODO
+%doc Changes README
 %{perl_vendorlib}/Net/IRC.pm
 %{perl_vendorlib}/Net/IRC
 %{_mandir}/man3/*
